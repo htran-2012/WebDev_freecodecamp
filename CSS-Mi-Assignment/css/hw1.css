@@ -1,0 +1,108 @@
+header {
+    background-color: gainsboro;
+    text-align: center;
+    background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+    width: 100%;
+    padding: 1%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav {
+    padding: 2%;
+}
+
+nav a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color:black;
+    padding: 10px 50px;
+    margin: 1%;
+    width: 10%;
+    border-style: outset;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 10px;
+    display: inline-block;  // so that the width of the object can be set
+}
+
+a:hover {
+    background-color: green;
+}
+
+
+.left {
+    float:left;
+    width: 25%;
+    background-color: green;
+    padding: 1%;
+    margin: 1% 2%;
+}
+
+
+.left img {
+    width: 99%;
+    display: inline-block;
+    border: 1px solid black;
+
+}
+
+table {
+    background-color: rgba(187, 245, 192, 0.8);
+    margin: 0 auto;
+    width: 60%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+tr, th,td, table{
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+tr{
+    height: 40px;
+}
+
+th {
+    background-color: green;
+    color: white;
+    border: 1px solid greenyellow;
+}
+
+th:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+th:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+th,td:first-child {
+    text-align: left;
+    padding: 10px;
+    color:gray
+}
+
+td:first-child:hover {
+    color: black;
+    background-color: rgb(133, 184, 133);
+}
+
+th,td:nth-child(n+2) {
+    text-align: center;
+    padding: 10px;
+    color:gray
+
+}
+
+td:nth-child(n+2):hover {
+    color: black;
+    background-color: rgb(133, 184, 133);
+}
+
+
