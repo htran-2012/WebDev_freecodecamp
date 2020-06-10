@@ -1,0 +1,132 @@
+/* set html height 100% and body min-height to 100%
+to let the bg img cover entire page
+https://stackoverflow.com/questions/17555682/height-100-or-min-height-100-for-html-and-body-elements 
+*/
+
+/* html{
+    height: 100%;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: wheat;
+}
+
+header {
+    text-align: center;
+    padding: 2%;
+
+}
+
+#title{
+    color: tomato;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    text-shadow: 1px 1px #555;
+
+}
+
+#description{
+    font-style: italic;
+    color: tomato;
+    font-size: 1.2em;
+    text-shadow: .5px .5px #555;
+}
+
+
+#survey-form {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: aliceblue;
+}
+
+#name-label, #email-label, #number-label, #comment-label {
+    display: block;
+    text-align: left;
+    padding: .2em .2em .2em 0;
+    font-size: 1.2em;
+
+}
+
+.input-box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.2em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+}
+
+.italic-text {
+    font-size: .8em;
+    font-weight: lighter;
+}
+
+.dropdown-label{
+    display: block;
+    text-align: left;
+    padding: .2em .2em .2em 0;
+    font-size: 1.2em;
+
+}
+
+#dropdown{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.2em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    color: #9e9e9e;
+}
+
+option:not(:first-of-type) {
+    color: black;
+}
+
+.question{
+    display: block;
+    text-align: left;
+    padding: .2em .2em .2em 0;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reply{
+    padding: .2em .2em .2em 0;
+    font-size: 1.2em;
+}
+
+.reply:last-of-type{
+    margin-bottom: 1.2em;
+}
+
+#submit {
+    width: 100%;
+    font-size: 1.2em;
+    padding: .8em;
+    background-color: #37af65;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
