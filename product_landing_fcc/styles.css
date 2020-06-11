@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 2%;
+    /* to make the header fixed */
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: whitesmoke;
+
+}
+
+.spacer {
+    width: 100vw;
+    height: 6em;
+}
+
+#header-img{
+    width: 20em;
+}
+
+#nav-bar {
+    flex-grow: 1;
+}
+
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-bar li{
+    display: inline-block;
+    margin-left: 8%;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+.nav-link:hover{
+    background-color: orange;
+}
+
+
+h1{
+    text-align: center;
+    font-weight: lighter;
+    padding: .5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+    /* so that there's no gap between body and header */
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    align-self: center;
+    width: 20em;
+    margin-bottom: 2em;
+    background-color: white;
+    border: 1px solid grey;
+    padding: .5em;
+    border-radius: 2px;
+}
+
+#submit{
+    width: 10em;
+    align-self: center;
+    padding: .2em;
+    font-weight: bolder;
+    font-size: 1.1em;
+    border: none;
+    box-shadow: 1px 1px rgba(0,0,0,.2);
+    background-color:  rgba(255,165,0,.7);
+    transition:.3s;
+}
+
+#submit:hover{
+    background-color:  rgba(255,165,0,1);
+}
+
+
+#features {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    grid-area: side;
+    justify-self: end;
+    align-self: center;
+    font-size: 3.5em;
+    color: orange;
+}
+
+.feature-heading{
+    grid-area: header;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+
+.feature-desc{
+    grid-area: main;
+    margin-bottom: 5%;
+    margin-top: 0;
+    margin-left: 5%;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "side side header"
+    "side side main"
+    ;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+}
+
+#pricing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    justify-content: space-around;
+}
+
+.item {
+    border: 1px solid black;
+    width: 15em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+h3{
+    background-color: #ccc;
+    margin: 0;
+    padding: 1em;
+    font-weight: light;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #ccc;
+    padding-right: 2em;
+    padding-bottom: 2em;
+
+}
+
+.footer-container div {
+    color: #555;
+}
+.footer-nav li{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+
+
+/*try flipping the truck*/
+.icon {
+    transform: scale(-1,1);
+}
+
+@media (max-width:780px) {
+    #header-img{
+        width: 15em;
+    }
+
+    .spacer {
+        width: 100vw;
+        height: 8em;
+    }
+
+    #nav-bar ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        align-content: center;
+    }
+
+    .item {
+        margin-bottom: 1em;
+    }
+}
